@@ -1,0 +1,39 @@
+<html>
+
+    <head>
+
+        <title>Lab02-json-array Richella O'Driscoll</title>
+
+    </head>
+
+    <body>
+
+        <button onclick="displayJSON()">go</button>
+
+    <script>
+
+        var JsonString = { "employees":  "employees": [{"firstName": "Pat", "lastName": "Murphy"},{
+
+"firstName": "Mary","lastName": "Burke"},{"firstName": "Tom",
+
+"lastName": "Keane"}]}
+
+        function displayJSON(){
+
+
+
+            var obj = JSON.parse(JsonString)
+
+            for (employee of obj.employees){
+
+            console.log(employee.firstName)
+
+            }
+
+        }
+
+        </script>
+
+    </body>
+
+</html>
